@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula de Bootstrap</title>
+    <link rel="stylesheet" href="resources/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-reboot.css">   
+    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Inicio da linha-->
+        <div class="row">
+            <!--Inicio da coluna Cadastro de Prduto-->
+            <div class="col-6">
+                <fieldset>
+                    <legend>Cadastro de Produto</legend>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" name="nome" id="nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="categoria">Categoria</label>
+                            <select name="categoria" class="form-control" id="categoria">
+                                <option value="1">Eletrônicos</option>
+                                <option value="2">Telefonia</option>
+                                <option value="3">Informática</option>
+                            </select>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="reset" class="btn btn-danger btn-block">Limpar</button>
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+
+
+            <!--Final da coluna Cadastro de Prduto-->
+            <!--Inicio da coluna de Lista de Produtos-->
+            <div class="col-6">
+                <fieldset>
+                    <legend>Lista de produtos</legend>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>nome</th>
+                                <th>categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Notebook HP</td>
+                                <td>Informática</td>
+                                <td>
+                                        <button type="submit" class="btn btn-success"><i class="fa fa-edit"></i>&NonBreakingSpace; Editar</button>
+                                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i>&NonBreakingSpace; Excluir</button>                                                                                                                                                                                              
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>TV 50'' Philco</td>
+                                <td>Eletrônico</td>
+                                <td>
+                                    <button type="submit" class="btn btn-success"><i class="fa fa-edit"></i>&NonBreakingSpace; Editar</button>
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i>&NonBreakingSpace; Excluir</button>                                                                                                                                                                                              
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Celular Samsung 10</td>
+                                <td>Telefonia</td>
+                                <td>
+                                    <button type="submit" class="btn btn-success"><i class="fa fa-edit"></i>&NonBreakingSpace; Editar</button>
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i>&NonBreakingSpace; Excluir</button>                                                                                                                                                                                              
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Pen drive scandisk</td>
+                                <td>Informática</td>
+                                <td>
+                                    <button type="submit" class="btn btn-success"><i class="fa fa-edit"></i>&NonBreakingSpace; Editar</button>
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i>&NonBreakingSpace; Excluir</button>                                                                                                                                                                                              
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+
+            </div>
+            <!--Final da coluna de Lista de Produtos-->
+        </div>
+        <!-- Final da linha-->
+    </div>
+
+    <script src="resources/js/jquery.js"></script>
+    <script src="resources/js/popper.js"></script>
+    <script src="resources/js/bootstrap.js"></script>
+    <script src="resources/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
